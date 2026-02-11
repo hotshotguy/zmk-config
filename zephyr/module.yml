@@ -1,0 +1,5 @@
+name: mriya-zmk-module
+build:
+  settings:
+    board_root: .
+

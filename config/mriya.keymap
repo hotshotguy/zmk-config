@@ -48,7 +48,7 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <14 15>;
+            key-positions = <15 14>;
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -59,31 +59,31 @@
 
         default_layer {
             bindings = <
-           &kp ESC    &kp N1          &kp N2          &kp N3            &kp N4        &kp N5         &kp N6     &kp N7        &kp N8             &kp N9           &kp N0              &kp MINUS
-&kp GRAVE  &kp TAB    &kp Q           &kp W           &kp E             &kp R         &kp T          &kp Y      &kp U         &kp I              &kp O            &kp P               &kp LBKT        &mt RWIN RBKT
-           &kp LCTRL  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F   &kp G          &kp H      &mt RCTRL J   &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &mt RCTRL SQT
-           &kp LSHFT  &kp Z           &kp X           &kp C             &kp V         &kp B          &kp N      &kp M         &kp COMMA          &kp DOT          &kp FSLH            &mt RSHFT BSLH
-                                      &switch_lang    &kp LEFT_GUI      &kp LEFT_ALT  &lt 1 SPACE    &lt 1 RET  &kp LEFT_ALT  &lt 2 BACKSPACE    &lt 1 DEL
+           &kp ESC    &kp N1      &kp N2        &kp N3        &kp N4        &kp N5         &kp N6     &kp N7        &kp N8           &kp N9      &kp N0         &kp MINUS
+&kp GRAVE  &kp TAB    &kp Q       &kp W         &kp E         &kp R         &kp T          &kp Y      &kp U         &kp I            &kp O       &kp P          &kp LBKT        &mt RWIN RBKT
+           &kp LCTRL  &mt LGUI A  &mt LALT S    &mt LSHIFT D  &mt LCTRL F   &kp G          &kp H      &mt RCTRL J   &mt RSHIFT K     &mt RALT L  &mt RGUI SEMI  &mt RCTRL SQT
+           &kp LSHFT  &kp Z       &kp X         &kp C         &kp V         &kp B          &kp N      &kp M         &kp COMMA        &kp DOT     &kp FSLH       &mt RSHFT BSLH
+                                  &switch_lang  &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE    &lt 1 RET  &kp LEFT_ALT  &lt 2 BACKSPACE  &lt 1 DEL
             >;
         };
 
         lower_layer {
             bindings = <
-       &trans          &trans    &trans  &trans    &trans    &trans       &trans     &trans    &trans                &trans                 &trans        &trans
-&mo 3  &kp UNDER       &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp F6     &kp F7    &kp F8                &kp F9                 &kp F10       &kp F11          &mt RGUI F12
-       &mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &mt RCTRL MINUS
-       &mt LALT EQUAL  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp N6     &kp N7    &kp LBKT              &kp RBKT               &kp N0        &trans
-                                 &trans  &trans    &trans    &trans       &trans     &trans    &lt 3 DEL             &trans
+       &trans          &trans             &trans           &trans           &trans          &trans       &trans     &trans          &trans                       &trans                      &trans             &trans
+&mo 3  &kp UNDER       &kp F1             &kp F2           &kp F3           &kp F4          &kp F5       &kp F6     &kp F7          &kp F8                       &kp F9                      &kp F10            &kp F11          &mt RGUI F12
+       &mt LCTRL PLUS  &mt LEFT_GUI EXCL  &mt LEFT_ALT AT  &mt LSHIFT HASH  &mt LCTRL DLLR  &kp PRCNT    &kp CARET  &mt RCTRL AMPS  &mt RSHIFT LEFT_PARENTHESIS  &mt RALT RIGHT_PARENTHESIS  &mt RGUI ASTERISK  &mt RCTRL MINUS
+       &mt LALT EQUAL  &kp N1             &kp N2           &kp N3           &kp N4          &kp N5       &kp N6     &kp N7          &kp LBKT                     &kp RBKT                    &kp N0             &trans
+                                          &trans           &trans           &trans          &trans       &trans     &trans          &lt 3 DEL                    &trans
             >;
         };
 
         raise_layer {
             bindings = <
-        &trans           &trans           &trans     &trans     &trans     &trans          &trans        &trans    &trans     &trans     &trans           &kp K_SLEEP
-&trans  &kp KP_NUM       &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &trans
-        &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-        &trans           &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                          &trans     &trans     &trans     &lt 3 RET       &lt 3 ESC     &trans    &trans     &trans
+        &trans           &trans                &trans          &trans            &trans           &trans          &trans        &trans          &trans         &trans          &trans           &kp K_SLEEP
+&trans  &kp KP_NUM       &kp KP_SLASH          &kp KP_N7       &kp KP_N8         &kp KP_N9        &kp KP_MINUS    &kp C_VOL_UP  &kp HOME        &kp PSCRN      &kp PG_UP       &kp SLCK         &kp CAPS         &trans
+        &mt LCTRL EQUAL  &mt LGUI KP_MULTIPLY  &mt LALT KP_N4  &mt LSHIFT KP_N5  &mt LCTRL KP_N6  &kp KP_PLUS     &kp C_MUTE    &mt RCTRL LEFT  &mt RSHIFT UP  &mt RALT RIGHT  &mt RGUI INS     &mt RCTRL K_APP
+        &trans           &kp KP_N0             &kp KP_N1       &kp KP_N2         &kp KP_N3        &kp KP_DOT      &kp C_VOL_DN  &kp END         &kp DOWN       &kp PG_DN       &kp PAUSE_BREAK  &trans
+                                               &trans          &trans            &trans           &lt 3 RET       &lt 3 ESC     &trans          &trans         &trans
             >;
         };
 

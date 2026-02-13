@@ -66,6 +66,16 @@
             key-positions = <27 30>;
             layers = <0 2 1>;
         };
+
+        left_brackets {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <33 34>;
+        };
+
+        right_brackets {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <34 35>;
+        };
     };
 
     keymap {
@@ -83,11 +93,11 @@
 
         lower_layer {
             bindings = <
-       &trans          &trans             &trans           &trans          &trans           &trans       &trans     &trans           &trans                &trans                &trans             &trans
-&mo 3  &kp UNDER       &kp F1             &kp F2           &kp F3          &kp F4           &kp F5       &kp F6     &kp F7           &kp F8                &kp F9                &kp F10            &kp F11          &mt RGUI F12
-       &mt LCTRL PLUS  &mt LEFT_GUI EXCL  &mt LEFT_ALT AT  &mt LCTRL HASH  &mt LSHIFT DLLR  &kp PRCNT    &kp CARET  &mt RSHIFT AMPS  &left_brackets_rctrl  &right_brackets_ralt  &mt RGUI ASTERISK  &mt RCTRL MINUS
-       &mt LALT EQUAL  &kp N1             &kp N2           &kp N3          &kp N4           &kp N5       &kp N6     &kp N7           &kp N8                &kp N9                &kp N0             &trans
-                                          &trans           &trans          &trans           &trans       &trans     &trans           &lt 3 DEL             &trans
+       &trans          &trans             &trans           &trans          &trans           &trans       &trans     &trans           &trans                      &trans                          &trans             &trans
+&mo 3  &kp UNDER       &kp F1             &kp F2           &kp F3          &kp F4           &kp F5       &kp F6     &kp F7           &kp F8                      &kp F9                          &kp F10            &kp F11          &mt RGUI F12
+       &mt LCTRL PLUS  &mt LEFT_GUI EXCL  &mt LEFT_ALT AT  &mt LCTRL HASH  &mt LSHIFT DLLR  &kp PRCNT    &kp CARET  &mt RSHIFT AMPS  &mt RCTRL LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt RGUI ASTERISK  &mt RCTRL MINUS
+       &mt LALT EQUAL  &kp N1             &kp N2           &kp N3          &kp N4           &kp N5       &kp N6     &kp N7           &kp N8                      &kp N9                          &kp N0             &trans
+                                          &trans           &trans          &trans           &trans       &trans     &trans           &lt 3 DEL                   &trans
             >;
         };
 

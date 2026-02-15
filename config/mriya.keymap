@@ -76,6 +76,11 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <34 35>;
         };
+
+        bluetoth_conf_layer {
+            bindings = <&sl 3>;
+            key-positions = <53 12>;
+        };
     };
 
     keymap {
@@ -113,11 +118,11 @@
 
         adjust_layer {
             bindings = <
-       &none        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
-&none  &bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader  &none
-       &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-       &sys_reset   &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &sys_reset
-                                  &none         &trans        &none         &trans          &trans        &none         &trans        &none
+       &bt BT_CLR   &none         &none         &none         &none         &bt BT_CLR_ALL    &bt BT_CLR_ALL  &none         &none         &none         &none         &bt BT_CLR
+&none  &bootloader  &none         &none         &none         &none         &none             &none           &none         &none         &none         &none         &bootloader  &none
+       &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &bt BT_SEL 4    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
+       &sys_reset   &none         &none         &bt BT_PRV    &bt BT_NXT    &none             &none           &bt BT_NXT    &bt BT_PRV    &none         &none         &sys_reset
+                                  &none         &trans        &none         &trans            &trans          &none         &trans        &none
             >;
         };
 

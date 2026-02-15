@@ -103,11 +103,11 @@
 
         raise_layer {
             bindings = <
-        &trans           &trans                &trans          &trans           &trans            &trans          &trans        &trans           &trans        &trans          &trans           &kp K_SLEEP
-&trans  &kp KP_NUM       &kp KP_SLASH          &kp KP_N7       &kp KP_N8        &kp KP_N9         &kp KP_MINUS    &kp C_VOL_UP  &kp HOME         &kp PSCRN     &kp PG_UP       &kp SLCK         &kp CAPS         &trans
-        &mt LCTRL EQUAL  &mt LGUI KP_MULTIPLY  &mt LALT KP_N4  &mt LCTRL KP_N5  &mt LSHIFT KP_N6  &kp KP_PLUS     &kp C_MUTE    &mt RSHIFT LEFT  &mt RCTRL UP  &mt RALT RIGHT  &mt RGUI INS     &mt RCTRL K_APP
-        &trans           &kp KP_N0             &kp KP_N1       &kp KP_N2        &kp KP_N3         &kp KP_DOT      &kp C_VOL_DN  &kp END          &kp DOWN      &kp PG_DN       &kp PAUSE_BREAK  &trans
-                                               &trans          &trans           &trans            &lt 3 RET       &lt 3 ESC     &trans           &trans        &trans
+        &trans      &trans              &trans             &trans              &trans               &trans                  &trans        &trans           &trans        &trans          &trans           &kp K_SLEEP
+&trans  &kp KP_NUM  &kp LEFT_BRACKET    &kp N7             &kp NUMBER_8        &kp NUMBER_9         &kp RIGHT_BRACKET       &kp C_VOL_UP  &kp HOME         &kp PSCRN     &kp PG_UP       &kp SLCK         &kp CAPS         &trans
+        &kp PLUS    &mt LGUI SEMICOLON  &mt LALT NUMBER_4  &mt LCTRL NUMBER_5  &mt LSHIFT NUMBER_6  &kp EQUAL               &kp C_MUTE    &mt RSHIFT LEFT  &mt RCTRL UP  &mt RALT RIGHT  &mt RGUI INS     &mt RCTRL K_APP
+        &trans      &kp GRAVE           &kp NUMBER_1       &kp NUMBER_2        &kp NUMBER_3         &kp NON_US_BACKSLASH    &kp C_VOL_DN  &kp END          &kp DOWN      &kp PG_DN       &kp PAUSE_BREAK  &trans
+                                        &trans             &trans              &trans               &lt 3 RET               &lt 3 ESC     &trans           &trans        &trans
             >;
         };
 
